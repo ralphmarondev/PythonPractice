@@ -1,6 +1,7 @@
-import string
+def exec_code(string):
+    exec(string)
 
-print(string.ascii_lowercase)
-print(string.ascii_uppercase)
-print(string.digits)
-print(" .,?:;")
+
+string = "print(\"hello there, ralph maron eda is cute\")"
+
+exec_code(string)
