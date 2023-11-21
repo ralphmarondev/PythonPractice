@@ -1,13 +1,17 @@
-# check for url in a string
-def find(string):
-    string_list = string.split()
-    result = []
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
 
-    for i in string_list:
-        if i.startswith("https:") or i.startswith("http:"):
-            result.append(i)
-    return result
+    print(student_marks.get(query_name))
+    # score_list = student_marks.get(query_name[scores])
+    # result = [lambda x: x + i for i in score_list] / len(score_list)
+    #
+    # print(result)
+    result = '{:.2f}'.format(sum(student_marks[query_name]) / len(student_marks[query_name]))
+    print(result)
 
-string = "My Profile: https://com.maronworks.com/ralphmaron/my-python-programs hosted by http://www.github.com"
-
-print(f"Urls: {find(string)}")
