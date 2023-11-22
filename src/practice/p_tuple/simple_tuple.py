@@ -1,5 +1,5 @@
 # reference: https://www.softwaretestinghelp.com/python/python-tuple/
-def convert_list_to_tupple():
+def convert_list_to_tuple():
     my_list = [1, 2, 3, 4, 5]
 
     print(my_list)
