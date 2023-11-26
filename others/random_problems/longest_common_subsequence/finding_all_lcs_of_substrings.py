@@ -2,14 +2,14 @@
 def LCS(X, Y, m, n, lookup):
     # if the end of either sequence is reached
     if m == 0 or n == 0:
-        # create a list with one empty string and return
+        # create a linked_list with one empty string and return
         return ['']
 
     # if the last character of `X` and `Y` matches
     if X[m - 1] == Y[n - 1]:
 
         # ignore the last characters of `X` and `Y` and find all LCS of substring
-        # `X[0…m-2]`, `Y[0…n-2]` and store it in a list
+        # `X[0…m-2]`, `Y[0…n-2]` and store it in a linked_list
         lcs = LCS(X, Y, m - 1, n - 1, lookup)
 
         # append current character `X[m-1]` or `Y[n-1]`
@@ -68,7 +68,7 @@ def findLCS(X, Y):
     # find all the longest common subsequences
     lcs = LCS(X, Y, len(X), len(Y), lookup)
 
-    # since a list can contain duplicates, "convert" it to a set and return
+    # since a linked_list can contain duplicates, "convert" it to a set and return
     return set(lcs)
 
 

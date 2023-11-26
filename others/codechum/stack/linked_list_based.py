@@ -1,4 +1,4 @@
-# linked list based stack implementation
+# linked linked_list based stack implementation
 class Node:
     def __init__(self, data=None):
         self.data = data

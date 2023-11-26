@@ -1,5 +1,5 @@
 def filtering_list(my_list: list[int]):
-    # my_filtered_list = list(filter(lambda x: x > 20, my_list))
+    # my_filtered_list = linked_list(filter(lambda x: x > 20, my_list))
     my_filtered_list = [item for item in my_list if item > 20]
 
     return my_filtered_list

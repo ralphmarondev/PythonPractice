@@ -1,11 +1,11 @@
 # Function to return all SCS of substrings `X[0…m-1]`, `Y[0…n-1]`
 def SCS(X, Y, m, n, lookup):
-    # if the end of the first string is reached, create a list
+    # if the end of the first string is reached, create a linked_list
     # containing the second substring and return
     if m == 0:
         return {Y[:n]}
 
-    # if the end of the second string is reached, create a list
+    # if the end of the second string is reached, create a linked_list
     # containing the first substring and return
     elif n == 0:
         return {X[:m]}

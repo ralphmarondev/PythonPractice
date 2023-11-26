@@ -1,4 +1,4 @@
-# multi-dimensional list
+# multi-dimensional linked_list
 def multi_dimensional_list():
     my_list = [
         [[10, 20],

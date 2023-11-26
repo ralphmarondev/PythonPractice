@@ -1,4 +1,4 @@
-# find all close matches of input string from a list
+# find all close matches of input string from a linked_list
 import difflib
 
 def get_close_matches(string,pattern):

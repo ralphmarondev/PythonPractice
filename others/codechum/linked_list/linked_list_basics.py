@@ -114,7 +114,7 @@ if __name__ == "__main__":
     # Insert at the end
     linked_list.insert_at_end(4)
 
-    # Display the linked list
+    # Display the linked linked_list
     print("Linked List:")
     linked_list.display()
 
@@ -123,11 +123,11 @@ if __name__ == "__main__":
     linked_list.delete_last()
     linked_list.delete_at_position(1)
 
-    # Display the modified linked list
+    # Display the modified linked linked_list
     print("\nModified Linked List:")
     linked_list.display()
 
-    # Reverse the linked list
+    # Reverse the linked linked_list
     linked_list.reverse()
     print("\nReversed Linked List:")
     linked_list.display()

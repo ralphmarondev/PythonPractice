@@ -1,6 +1,6 @@
 my_list = [10, 50, 20, 30, 40]
 def join_list():
-    # python join list
+    # python join linked_list
     my_foods = ['pizza', 'falafel', 'carrot cake']
     my_foods_csv = ",".join(my_foods)
     print(my_foods_csv)

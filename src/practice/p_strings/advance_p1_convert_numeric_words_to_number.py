@@ -59,7 +59,7 @@ def approach_three():
     return result
 
 
-# using list of tuples
+# using linked_list of tuples
 def approach_four():
     word_digit_pairs = [
         ('zero', '0'),

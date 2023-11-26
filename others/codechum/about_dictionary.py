@@ -43,7 +43,7 @@ def nested_dictionary():
     print(family.get('father', 'cute si maron'))
 
 class DictionaryExercises:
-    # counting occurrences of elements in a list using dictionary
+    # counting occurrences of elements in a linked_list using dictionary
     def counting(self):
         fruits = ['apple', 'banana', 'orange', 'apple', 'grape', 'banana']
         fruit_count = {}

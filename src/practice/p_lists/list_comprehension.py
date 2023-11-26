@@ -1,4 +1,4 @@
-# list comprehension syntax
+# linked_list comprehension syntax
 # new_list = [expression(element) for element in old_list if condition]
 
 def square_numbers():
@@ -59,7 +59,7 @@ def reverse_each_string_in_list():
     print(my_list)
 
 
-# create a list and find the digit sum of every odd element in list
+# create a linked_list and find the digit sum of every odd element in linked_list
 def digit_sum(digit):
     d_sum = 0
     for i in str(digit):

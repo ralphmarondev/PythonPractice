@@ -1,5 +1,5 @@
 def accepting_user_input_using_loop():
-    n = int(input("Enter size of list: "))
+    n = int(input("Enter size of linked_list: "))
     my_list = []
 
     for i in range(n):
@@ -9,7 +9,7 @@ def accepting_user_input_using_loop():
 
 
 def accepting_user_input_using_map():
-    n = int(input("Enter size of list: "))
+    n = int(input("Enter size of linked_list: "))
 
     my_list = list(map(int, input("Enter integer element: ").strip().split()))[:n]
 
@@ -18,7 +18,7 @@ def accepting_user_input_using_map():
 
 def get_list_of_input():
     my_list = []
-    n = int(input("Enter size of list: "))
+    n = int(input("Enter size of linked_list: "))
 
     for i in range(n):
         element = [input(), int(input())]
@@ -31,8 +31,8 @@ def get_using_list_comprehension_and_typecasting():
     my_int_list = []
     my_char_list = []
 
-    my_int_list = [int(item) for item in input("Enter list item: ").split()]
-    my_char_list = [char for char in input("Enter list items: ").split()]
+    my_int_list = [int(item) for item in input("Enter linked_list item: ").split()]
+    my_char_list = [char for char in input("Enter linked_list items: ").split()]
 
     print(my_int_list)
     print(my_char_list)
