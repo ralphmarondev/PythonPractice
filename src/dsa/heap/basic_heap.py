@@ -42,7 +42,7 @@ class MaxHeap:
 
         if len(self.heap) > left and self.heap[largest] < self.heap[left]:
             largest = left
-        if len(self.head) > right and self.heap[largest] < self.heap[right]:
+        if len(self.heap) > right and self.heap[largest] < self.heap[right]:
             largest = right
         if largest != index:
             self.__swap(index, largest)
@@ -53,7 +53,16 @@ class MaxHeap:
 
 
 if __name__ == '__main__':
-    m = MaxHeap([20, 30])
+    # m = MaxHeap([20, 30])
 
-    m.push(10)
-    print(str(m.heap))
+    # m.push(10)
+    m = MaxHeap()
+    m.push(3)
+    m.push(1)
+    m.push(4)
+    m.push(1)
+    m.push(5)
+    print(m.heap)
+
+    print(m.pop())
+    print(m.heap)
